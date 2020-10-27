@@ -4,5 +4,8 @@
   <input type="text" name="inputName" ngModel #inputName="ngModel" />
 
   <button type="submit">Add name</button>
-  <app-child [heroName]="name" [masterName]="master"> </app-child>
+
+  Agreed: {{agreed}} <br>
+  Disagreed : {{disagreed}}
+  <app-child [heroName]="name" [masterName]="master" (voted)="onVoted($event)"> </app-child>
 </form>

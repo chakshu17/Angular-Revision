@@ -11,10 +11,17 @@ export class ParentComponent implements OnInit {
   heroes = ['Dr IQ', 'Magneta', 'Demon'];
   master = 'Chakshu';
   name: string='';
+  agreed = 0
+  disagreed= 0
 
   ngOnInit(): void {}
 
   addNameHandler(f: NgForm) {
     this.name = f.value.inputName;
   }
+
+  onVoted(agreed:boolean){
+    agreed ? this.agreed++ : this.disagreed++
+  }
+
 }

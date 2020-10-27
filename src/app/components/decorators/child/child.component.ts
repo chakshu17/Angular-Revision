@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 // export interface Hero {
 //   heroNames: ['Dr IQ', 'Magneta', 'Bombasto'];
@@ -14,8 +14,13 @@ export class ChildComponent implements OnInit {
   @Input() heroName;
   @Input() masterName:string;
 
+  @Output () voted = new EventEmitter<boolean>();
+
   ngOnInit(): void {}
-
-
+  didVote:boolean=false
+  vote(agreed:boolean){
+    this.voted.emit(agreed);
+    this.didVote=true;
+  }
 
 }
