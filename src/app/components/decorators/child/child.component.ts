@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
+// export interface Hero {
+//   heroNames: ['Dr IQ', 'Magneta', 'Bombasto'];
+// }
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
-  styleUrls: ['./child.component.scss']
+  styleUrls: ['./child.component.scss'],
 })
+
 export class ChildComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  constructor() {}
+  @Input() heroName;
+  @Input() masterName:string;
+  ngOnInit(): void {}
 }

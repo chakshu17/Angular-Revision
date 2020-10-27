@@ -1,1 +1,4 @@
-<p>parent works!</p>
+<h2>{{ master }}</h2>
+
+<app-child *ngFor="let hero of heroes" [heroName]="hero" [masterName]="master">
+</app-child>
