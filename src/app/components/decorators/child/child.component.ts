@@ -13,5 +13,9 @@ export class ChildComponent implements OnInit {
   constructor() {}
   @Input() heroName;
   @Input() masterName:string;
+
   ngOnInit(): void {}
+
+
+
 }

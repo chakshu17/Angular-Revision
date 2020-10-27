@@ -1,4 +1,8 @@
 <h2>{{ master }}</h2>
 
-<app-child *ngFor="let hero of heroes" [heroName]="hero" [masterName]="master">
-</app-child>
+<form (ngSubmit)="addNameHandler(f)" #f="ngForm">
+  <input type="text" name="inputName" ngModel #inputName="ngModel" />
+
+  <button type="submit">Add name</button>
+  <app-child [heroName]="name" [masterName]="master"> </app-child>
+</form>

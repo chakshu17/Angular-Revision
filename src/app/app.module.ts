@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParentComponent } from './components/decorators/parent/parent.component';
 import { ChildComponent } from './components/decorators/child/child.component';
-
+import { FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +14,8 @@ import { ChildComponent } from './components/decorators/child/child.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
