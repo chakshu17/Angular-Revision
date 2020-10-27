@@ -16,6 +16,8 @@ export class ChildComponent implements OnInit {
 
   @Output () voted = new EventEmitter<boolean>();
 
+  counter:number=0
+
   ngOnInit(): void {}
   didVote:boolean=false
   vote(agreed:boolean){

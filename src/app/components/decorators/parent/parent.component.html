@@ -2,10 +2,16 @@
 
 <form (ngSubmit)="addNameHandler(f)" #f="ngForm">
   <input type="text" name="inputName" ngModel #inputName="ngModel" />
-
+<br>
   <button type="submit">Add name</button>
-
+  
+<br>
+<button (click)="clickCounter()" >Counter ++</button> <br>
   Agreed: {{agreed}} <br>
   Disagreed : {{disagreed}}
   <app-child [heroName]="name" [masterName]="master" (voted)="onVoted($event)"> </app-child>
+
 </form>
+
+
+
