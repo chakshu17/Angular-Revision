@@ -9,7 +9,14 @@ export class BindingComponent implements OnInit {
 
   constructor() { }
   imageUrl='assets/main02.jpg'
-  classnumbers='class1 class2'
+  classNumbers='class1 class2'
+
+  mainClass='mainClass'
+  classImageUrl='assets/main.jpg'
+
+  styleImageUrl='assets/main1.jpg'
+  styleWidth='70%'
+  styleClasses="width: 70%;border-radius: 20px"
   ngOnInit(): void {
   }
 

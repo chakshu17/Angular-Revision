@@ -1,19 +1,29 @@
 <h1>Property Binding</h1>
 
 <h3>Property Binded Image</h3>
-<img [src]="imageUrl" style="width: 70%;"/>
+<img [src]="imageUrl" style="width: 50%;"/>
 
 <br>
 <h3>Interpolated Image</h3>
-<img src="{{imageUrl}}" style="width: 70%;">
+<img src="{{imageUrl}}" style="width: 50%;">
 
 
 
-<h1>Property Binding</h1>
+<h1>Class Binding</h1>
 
-<h3>Property Binded Image</h3>
-<img [src]="imageUrl" style="width: 70%;"/>
+<h3>Single Class Binded Image</h3>
+<img [src]="classImageUrl" [class]='mainClass' />
 
 <br>
-<h3>Interpolated Image</h3>
-<img src="{{imageUrl}}" style="width: 70%;">
+<h3>Multiple Class Image</h3>
+<img src="{{classImageUrl}}" [class]="classNumbers">
+
+
+<h1>Style Binding</h1>
+
+<h3>Single Class Binded Image</h3>
+<img [src]="styleImageUrl" [style.width.px]="70" />
+
+<br>
+<h3>Multiple Class Image</h3>
+<img src="{{styleImageUrl}}" [style]="styleClasses">
