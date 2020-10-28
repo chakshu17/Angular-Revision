@@ -1,14 +1,28 @@
+<h1>Built In Attribute</h1>
 <h4>
   NgCLass and NgStyle
 </h4>
 
 <button class="btn btn-primary" (click)="gradientToggle =! gradientToggle ">Toggle Gradient</button>
 <div [ngClass]="gradientToggle ? 'blue-gradient' : 'red-gradient'"
-  [ngStyle] = "{ color:'white','font-family':'courier' }">
+  [ngStyle] = "{ color:'blcack','font-family':'cursive' }">
   THIS IS DIV
 </div>
 
 <hr>
-<h4>Ng NOnbindable</h4>
+<h4>Ng Nonbindable</h4>
 
 <p ngNonBindable >the user's name can be printed on string using string interpolation syntax like : {{ userName }}</p>
+<hr><hr>
+<br>
+
+<h1>Built In Structural</h1>
+<button class="btn btn-primary" (click)="toggleButton =! toggleButton ">Toggle BUtton</button>
+<div *ngIf="toggleButton">
+  <ul>
+    <div *ngFor="let message of messages">
+        <li> {{message}} </li>
+    </div>
+  </ul>
+
+</div>
