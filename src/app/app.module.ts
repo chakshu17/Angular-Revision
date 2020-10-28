@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParentComponent } from './components/decorators/parent/parent.component';
 import { ChildComponent } from './components/decorators/child/child.component';
-import { FormsModule} from '@angular/forms'
+import { FormsModule} from '@angular/forms';
+import { LifecycleComponent } from './components/lifecycle/lifecycle/lifecycle.component'
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
