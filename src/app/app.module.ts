@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './components/decorators/parent/parent.component';
 import { ChildComponent } from './components/decorators/child/child.component';
 import { FormsModule} from '@angular/forms';
-import { LifecycleComponent } from './components/lifecycle/lifecycle/lifecycle.component'
+import { LifecycleComponent } from './components/lifecycle/lifecycle/lifecycle.component';
+import { ClickCounterPipe } from './pipes/click-counter.pipe'
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
     ChildComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    ClickCounterPipe
   ],
   imports: [
     BrowserModule,
