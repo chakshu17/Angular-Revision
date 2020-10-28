@@ -8,7 +8,8 @@ import { ChildComponent } from './components/decorators/child/child.component';
 import { FormsModule} from '@angular/forms';
 import { LifecycleComponent } from './components/lifecycle/lifecycle/lifecycle.component';
 import { ClickCounterPipe } from './pipes/click-counter.pipe';
-import { BindingComponent } from './components/binding/binding/binding.component'
+import { BindingComponent } from './components/binding/binding/binding.component';
+import { BuiltInComponent } from './components/directives/built-in/built-in.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { BindingComponent } from './components/binding/binding/binding.component
     ChildComponent,
     LifecycleComponent,
     ClickCounterPipe,
-    BindingComponent
+    BindingComponent,
+    BuiltInComponent
   ],
   imports: [
     BrowserModule,
